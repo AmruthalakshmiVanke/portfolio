@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    color: #240c0c;
+}
+.header{
+    position :fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url('') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.home-content{
+    max-width: 600px;   
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700px;
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+.home-content p{
+    font-size: 20px;
+}
+.home-amru a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 50%;
+    color: cyan;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+.home-amru a:hover{
+    background: cyan;
+    color: #0a273b;
+    box-shadow: 0 0 20px cyan;
+}
+.btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    background:rgb(136, 94, 179);
+    border-radius: 40px;
+    font-size:16px;
+    color:#081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap:1.5rem;
+    justify-items: center;
+     /* Add padding if needed for spacing */
+   padding-right: 500px;
+}
+.about-txt h2{
+    font-size: 60px;
+
+}
+.about-txt h4{
+    font-size: 29px;
+    font-weight: 600;
+    color: #240c0c;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+.about-txt p{
+    color: #240c0c;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+.about-txt {
+        text-align: center; /* Center the text within the about text section */
+        
+            max-width: 600px; /* Limit the width of the text for better readability */
+            margin: auto; /* Center text block horizontally within its grid area */
+    
+    }
+
+.skills {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+.skills h2 {
+    font-size: 60px;
+    margin-bottom: 40px;
+    color: #333;
+}
+.skills .row {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.skills .col-md-4 {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+}
+
+.skills h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+.skills li {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+#Contact {
+    padding: 50px 10%;
+    background: #f4f4f4; /* Light background for contrast */
+    border-top: 2px solid #ddd; /* Subtle border to separate sections */
+}
+
+#Contact h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #240c0c; /* Matches the body color */
+}
+
+#Contact .form-group {
+    margin-bottom: 20px;
+}
+
+#Contact .form-group label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #240c0c; /* Matches the body color */
+    margin-bottom: 5px;
+    display: block;
+}
+
+#Contact .form-control {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+}
+
+#Contact .form-control:focus {
+    border-color: cyan;
+    box-shadow: 0 0 5px rgba(18, 147, 147, 0.5);
+}
+
+#Contact .btn-primary {
+    background: cyan;
+    color: #081b29;
+    border: none;
+    border-radius: 40px;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+#Contact .btn-primary:hover {
+    background: #0a273b;
+    color: rgb(69, 233, 186);
+}
